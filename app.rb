@@ -14,7 +14,7 @@ class Makersbnb < Sinatra::Base
     erb :sign_up
   end
   
-  post '/signup' do 
+  post '/signup' do
     @first_name = params[:first_name]
     session[:first_name] = params[:first_name]
     session[:last_name] = params[:last_name]
