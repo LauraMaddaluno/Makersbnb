@@ -16,7 +16,7 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           null,
           1,
@@ -28,6 +28,15 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
           null,
           1,
           null
@@ -35,9 +44,26 @@
       },
       "/Users/jordanveness/Projects/Makersbnb/Makersbnb/spec/features/homepage_spec.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jordanveness/Projects/Makersbnb/Makersbnb/spec/features/new_space_spec.rb": {
+        "lines": [
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           1,
           null,
           null
@@ -57,13 +83,12 @@
           1,
           null,
           1,
-          1,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1632397123
+    "timestamp": 1632399226
   }
 }

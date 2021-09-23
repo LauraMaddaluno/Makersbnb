@@ -1,0 +1,16 @@
+<h1>List a space, <%= @first_name %></h1>
+<div class="form">
+  <form action="/newspace" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description"></textarea><br>
+    <label for="price per night">Price per night:</label><br>
+    <input type="number" id="price_per_night" name="price_per_night" placeholder="£"><br>
+    <label for="available from">Available from:</label><br>
+    <input type="date" id="available_from" name="available_from"><br>
+    <label for="available to">Available to:</label><br>
+    <input type="date" id="available_to" name="available_to"><br>
+    <input type="submit" value="List my space!"><br>
+  </form>
+</div>

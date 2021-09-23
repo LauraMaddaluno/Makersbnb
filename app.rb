@@ -10,11 +10,11 @@ class Makersbnb < Sinatra::Base
     enable :sessions
   end
 
-  get '/' do
+  get '/signup' do
     erb :sign_up
   end
   
-  post '/signup' do
+  post '/details' do
     @first_name = params[:first_name]
     session[:first_name] = params[:first_name]
     session[:last_name] = params[:last_name]
@@ -22,7 +22,16 @@ class Makersbnb < Sinatra::Base
     session[:username] = params[:username]
     session[:password] = params[:password]
     session[:password_con] = params[:password_con]
-    erb :list_space
+    erb :new_space
   end
+
+  get '/listspace' do
+    erb :new_space
+  end
+
+  post '/newspace' do
+    'Hello'
+  end
+
   run! if app_file == $0
 end

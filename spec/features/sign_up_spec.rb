@@ -1,6 +1,6 @@
 feature 'Sign-up' do
   scenario 'User can sign-up to Makersbnb' do
-    visit('/')
+    visit('/signup')
     fill_in :first_name, with: 'Jamie'
     # fill_in :last_name, with: 'Brandt'
     # fill_in :email, with: 'JBrandt49@example.com'
