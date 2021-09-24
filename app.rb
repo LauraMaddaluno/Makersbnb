@@ -31,7 +31,8 @@ class Makersbnb < Sinatra::Base
     session[:username] = params[:username]
     session[:password] = params[:password]
     session[:password_con] = params[:password_con]
-    erb :new_space, layout: :prova
+    erb :new_space 
+    # layout: :prova
   end
 
   get '/listspace' do

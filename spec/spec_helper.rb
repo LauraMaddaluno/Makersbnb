@@ -1,3 +1,4 @@
+require_relative './setup_test_database'
 require 'simplecov'
 require 'simplecov-console'
 
@@ -7,9 +8,16 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 ])
 SimpleCov.start
 
-ENV['RACK_ENV'] = 'test'
-ENV['ENVIRONMENT'] == 'test'
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
+
+ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
+
+RSpec.configure do |config|
+  config.before(:each) do
+    setup_test_database
+  end
+end
 
 require 'capybara'
 require 'capybara/rspec'

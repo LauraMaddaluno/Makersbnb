@@ -14,9 +14,9 @@ class Space
  
   def self.all
     if ENV['ENVIRONMENT'] == 'test'
-      connection = PG.connect( dbname: 'makersbnb_test' )
+      connection = PG.connect(dbname: 'makersbnb_test')
     else
-      connection = PG.connect( dbname: 'makersbnb' )
+      connection = PG.connect(dbname: 'makersbnb')
     end
     
     result = connection.exec("SELECT * FROM space;")
@@ -29,9 +29,9 @@ class Space
  
   def self.create(name:, description:, price_per_night:, available_from:, available_to:)
     if ENV['ENVIRONMENT'] == 'test'
-      connection = PG.connect( dbname: 'makersbnb_test' )
+      connection = PG.connect(dbname: 'makersbnb_test')
     else
-      connection = PG.connect( dbname: 'makersbnb' )
+      connection = PG.connect(dbname: 'makersbnb')
     end
    # binding.pry
     row = connection.exec_params("INSERT INTO space (name, description,
