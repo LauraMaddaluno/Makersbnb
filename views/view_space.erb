@@ -1,0 +1,12 @@
+<h1>Property</h1>
+   
+<ul>
+  <% @space.each do |spaces| %>
+    <li><h3><%= spaces.name %></h3>
+    <%= spaces.description %>
+    £ <%= spaces.price_per_night %>
+    available from: <%= spaces.available_from %>
+    to <%= spaces.available_to %>
+    </li>
+  <% end %>
+</ul>
